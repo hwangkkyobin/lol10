@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open 500 Windows</title>
+  <script>
+    function openWindows() {
+      const url = "https://hwangkkyobin.github.io/123/";
+      for (let i = 0; i < 500; i++) {
+        window.open(
+          url,
+          "_blank",
+          "width=800,height=600,left=" + (i * 10) + ",top=" + (i * 10)
+        );
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Click the button to open 500 windows</h1>
+  <button onclick="openWindows()">Open 500 Windows</button>
+</body>
+</html>
